@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>article</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /*Article Section*/     
+html{overflow-x: hidden;}
+.mx_width{max-width: 1260px;margin: 0 auto;}
+.artcle-hed{background: #D4AF37; text-align: center; font-family: 'Montserrat';padding: 55px 0px 0px 0px; height: 230px;}
+.artcle_main{WIDTH:90%;MARGIN: 0 AUTO;margin-top: -87px;}
+.artcle_cont{text-align: center; width: 100%; background: black;border-radius: 20px 20px 0px 0px;}
+.artcle_spn{font-size:48px;font-family: 'Montserrat'; font-weight: bold;}
+.flxx{display: flex;align-items: center;color: white;gap: 50px;}
+.artcle-tb-btn{font-size: 20px;font-family: 'Montserrat'; cursor: pointer;padding: 31px 20px;border-radius: 20px 20px 0px 0px;}
+.artcle-tb-btn.active span{color: #D4AF37;}
+.artcle-tb-btn.active{background-color: #313030;}
+.artcle_bx{display: flex;gap: 15px; align-items: center;    background: #313030;margin: 20px 0px;padding: 20px;border-radius: 20px;}
+.artcle_img{width: 130px;height: 85px;border-radius: 15px;}
+.artcle_listsCont{width: 90%;margin: 0 auto; display: none; animation: moving .5s ease;}
+@keyframes moving{from{transform: translateX(50px); opacity: 0;}to{transform: translateX(0px); opacity:1;}} 
+.artcle_listsCont.active{display: block;}
+.artcle_tvDate{margin-bottom: 8px;}
+.artcle_tvDate span a{font-size: 12px;color: #CCCCCC; font-family: 'Montserrat';}
+.btm1txt{color: #D4AF37;font-size: 16px;font-family: 'Montserrat';font-weight: 600;}
+.btm2Txt{color: #FFFFFF;font-size: 14px;font-family:'Montserrat';font-weight: 300;margin: 8px 0px;}
+.artcle_listsCont_hed{font-size: 36px; font-family:"Montserrat"; text-align: center; font-weight:100; color: #CCCCCC;margin: 30px 0px; position: relative;}
+.artcle_listsCont_hed::after{content:"";width: 42px;height: 2px;background: #D4AF37;display: inline-block;position: absolute;bottom: -6px;left: 50%;}
+@media(max-width:769px){
+.artcle_listsCont_hed::after{left: 46%;}
+.artcle_listsCont_hed {font-size: 30px;}
+.artcle-hed{height: 158px;}
+.artcle_main{margin: 0;}   
+.artcle_spn {font-size: 30px;}
+.artcle-tb-btn{font-size: 12px;padding:20px;}
+.artcle-hed{padding:86px 0px 0px 0px;;}
+.artcle_img{width: 100%;height: 50%;}
+.artcle_tvDate span a {font-size:14px;color: #CCCCCC;font-weight: 500;font-family: 'Montserrat';}
+.article-botmTxt .btm1txt{font-size:13px;}
+.article-botmTxt .btm2txt{font-size:10px;}
+.artcle_bx{display: block;}
+.flxx {
+    overflow: auto;
+    gap: 8px;
+}
+.flxx::-webkit-scrollbar{
+   width: 10px;
+   height: 2px;
+}
+.flxx::-webkit-scrollbar-track{
+  background-color: black;
+}
+.flxx::-webkit-scrollbar-thumb{
+   background-color:#D4AF37;
+ }
+.artcle_main{width:100%;}
+}
+    </style>
+</head>
+<body>
+<!-- header Section -->
+    <header class="header">
+        <div class="mxwidth">
+           <!-- <a href="" class="nav__logo__left">
+              <img src="images/ibla-logo.png" alt="">
+           </a> -->
+           <ul class="nav__menu" id="navMenu">
+              <li class="menu__close">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+              </li>   
+              <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+              <li class="nav__item"><a href="#jury" class="nav__link">Jury</a></li>
+              <li class="nav__item"><a href="#categories" class="nav__link">Categories</a></li>
+              <li class="nav__item"><a href="#winners" class="nav__link">Winners</a></li>
+              <li class="nav__item"><a href="#gallery" class="nav__link">Gallery</a></li>
+              <li class="nav__item"><a href="#videos" class="nav__link">Videos</a></li>
+              <li class="nav__item"><a href="#articles" class="nav__link">Articles</a></li>
+              <li class="nav__item"><a href="#contact" class="nav__link">Contact Us</a></li>
+           </ul>
+           <div class="hambgr">
+              <span class="hambgr__bar"></span>
+              <span class="hambgr__bar"></span>
+              <span class="hambgr__bar"></span>
+           </div>
+        </div>
+        <div class="sticky_logo" id="stickyLogo">
+           <img src="./images/ibla-logo.png" alt="">
+        </div>
+     </header>
+
+  <!-- article Section -->
+    <section>
+        <div class="article_Sec">
+         <div class="mx_width">
+            <div class="artcle-hed">
+              <span class="artcle_spn">ARTICLES</span>
+            </div>
+            <div class="artcle_main">
+                <div class="artcle_cont flxx">
+                  <div class="artcle-tb-btn active">Articles<span>2023</span></div>
+                  <div class="artcle-tb-btn">Articles<span>2022</span></div>
+                  <div class="artcle-tb-btn">Articles<span>2021</span></div>
+                  <div class="artcle-tb-btn">Articles<span>2020</span></div>
+                  <div class="artcle-tb-btn">Articles<span>2019</span></div>
+               </div>
+            </div>
+
+            <div class="artcle_lists">
+             <div class="artcle_listsCont active">
+                <h2 class="artcle_listsCont_hed">ARTICLES 2023</h2>
+                <!--1bx-->
+                <div class="artclebx-glide">
+                <div class="artcle_bx">
+                    <a href="">
+                        <img class="artcle_img" src="./images/g5.png" alt="">
+                    </a>
+                    <div>
+                        <div class="artcle_tvDate">
+                            <span><a href="">cnbctv18.com |</a></span>
+                            <span><a href="">Thursday,11 May 2023</a></span>
+                        </div>
+                        <div class="article-botmTxt">
+                          <a href="">
+                           <span class="btm1txt">
+                            WPL: A GAME-CHANGER FOR WOMEN’S CRICKET, SAYS JHULAN GOSWAMI
+                           </span>
+                           <h3 class="btm2Txt">Mithali Raj, former captain of the India women's national 
+                            cricket team, also said the WPL will inspire many other girls to pick up the bat as they grow up watching women cricketers on television.
+                           </h3>
+                         </a>
+                        </div>
+                    </div>
+                </div>
+                  <!--2bx-->
+                <div class="artcle_bx">
+                    <a href="">
+                        <img class="artcle_img" src="./images/g6.png" alt="">
+                    </a>
+                    <div>
+                        <div class="artcle_tvDate">
+                            <span><a href="">cnbctv18.com |</a></span>
+                            <span><a href="">Thursday,11 May 2023</a></span>
+                        </div>
+                        <div class="article-botmTxt">
+                          <a href="">
+                           <span class="btm1txt">
+                            IBLA 2023 | BOLLYWOOD ACTRESS ALIA BHATT WINS ENTERTAINMENT LEADER OF THE YEAR
+                           </span>
+                           <h3 class="btm2Txt">Bollywood actress Alia Bhatt on Thursday received the Entertainment 
+                            Leader of the Year at the 18th edition of CNBC-TV18's India Business Leadership Awards (IBLA) in Mumbai.
+                           </h3>
+                         </a>
+                        </div>
+                    </div>
+                </div>
+                  <!--3bx-->
+                <div class="artcle_bx">
+                    <a href="">
+                        <img class="artcle_img" src="./images/g3.png" alt="">
+                    </a>
+                    <div>
+                        <div class="artcle_tvDate">
+                            <span><a href="">cnbctv18.com |</a></span>
+                            <span><a href="">Thursday,11 May 2023</a></span>
+                        </div>
+                        <div class="article-botmTxt">
+                          <a href="">
+                           <span class="btm1txt">
+                            IBLA 2023: MEET VIKRAM KIRLOSKAR, THE MAN WHO BROUGHT TOYOTA TO INDIA
+                           </span>
+                           <h3 class="btm2Txt">Adar Poonawalla, CEO of Serum Institute of India,
+                             was in attendance the India Business Leader Awards 2023, for which he was a member of the jury tasked with selecting winners across various categories.
+                           </h3>
+                         </a>
+                        </div>
+                    </div>
+                </div>
+                  <!--4bx-->
+                <div class="artcle_bx">
+                    <a href="">
+                        <img class="artcle_img" src="./images/g4.png" alt="">
+                    </a>
+                    <div>
+                        <div class="artcle_tvDate">
+                            <span><a href="">cnbctv18.com |</a></span>
+                            <span><a href="">Thursday,11 May 2023</a></span>
+                        </div>
+                        <div class="article-botmTxt">
+                          <a href="">
+                           <span class="btm1txt">
+                            IBLA 2023 | BOXING CHAMPION NIKHAT ZAREEN WINS SPORTS LEADER OF THE YEAR
+                           </span>
+                           <h3 class="btm2Txt">
+                            Two-time world champion Nikhat Zareen won gold medals at the 2022 Istanbul, 
+                            and 2023 New Delhi IBA Women's World Boxing Championships. She also won a gold medal at the Birmingham 2022 Commonwealth Games.
+                           </h3>
+                         </a>
+                        </div>
+                    </div>
+                </div>
+                <!--5bx-->
+                <div class="artcle_bx">
+                    <a href="">
+                        <img class="artcle_img" src="./images/g2.png" alt="">
+                    </a>
+                    <div>
+                        <div class="artcle_tvDate">
+                            <span><a href="">cnbctv18.com |</a></span>
+                            <span><a href="">Thursday,11 May 2023</a></span>
+                        </div>
+                        <div class="article-botmTxt">
+                          <a href="">
+                           <span class="btm1txt">
+                            IBLA 2023: LIFE AND LEGACY OF TATA GROUP’S 6TH CHAIRMAN CYRUS MISTRY
+                           </span>
+                           <h3 class="btm2Txt">
+                            Of Irish descent, Cyrus Mistry was born on 4 July 1968 to a Parsi 
+                            family in Bombay (now Mumbai), Maharashtra, the younger son of Indian billionaire and construction magnate Pallonji Mistry by his wife Patsy Perin Dubash.
+                           </h3>
+                         </a>
+                        </div>
+                    </div>
+                </div>
+                  <!--6bx-->
+                <div class="artcle_bx">
+                    <a href="">
+                        <img class="artcle_img" src="./images/g5.png" alt="">
+                    </a>
+                    <div>
+                        <div class="artcle_tvDate">
+                            <span><a href="">cnbctv18.com |</a></span>
+                            <span><a href="">Thursday,11 May 2023</a></span>
+                        </div>
+                        <div class="article-botmTxt">
+                          <a href="">
+                           <span class="btm1txt">
+                            WPL: A GAME-CHANGER FOR WOMEN’S CRICKET, SAYS JHULAN GOSWAMI
+                           </span>
+                           <h3 class="btm2Txt">Mithali Raj, former captain of the India women's national 
+                            cricket team, also said the WPL will inspire many other girls to pick up the bat as they grow up watching women cricketers on television.
+                           </h3>
+                         </a>
+                        </div>
+                    </div>
+                </div>
+                <!--7bx-->
+                <div class="artcle_bx">
+                    <a href="">
+                        <img class="artcle_img" src="./images/g2.png" alt="">
+                    </a>
+                    <div>
+                        <div class="artcle_tvDate">
+                            <span><a href="">cnbctv18.com |</a></span>
+                            <span><a href="">Thursday,11 May 2023</a></span>
+                        </div>
+                        <div class="article-botmTxt">
+                          <a href="">
+                           <span class="btm1txt">
+                            IBLA 2023 | BOLLYWOOD ACTRESS ALIA BHATT WINS ENTERTAINMENT LEADER OF THE YEAR
+                           </span>
+                           <h3 class="btm2Txt">
+                            Bollywood actress Alia Bhatt on Thursday received the Entertainment Leader of
+                             the Year at the 18th edition of CNBC-TV18's India Business Leadership Awards (IBLA) in Mumbai.
+                           </h3>
+                         </a>
+                        </div>
+                    </div>
+                </div>
+                <!--8bx-->
+                <div class="artcle_bx">
+                    <a href="">
+                        <img class="artcle_img" src="./images/g5.png" alt="">
+                    </a>
+                    <div>
+                        <div class="artcle_tvDate">
+                            <span><a href="">cnbctv18.com |</a></span>
+                            <span><a href="">Thursday,11 May 2023</a></span>
+                        </div>
+                        <div class="article-botmTxt">
+                          <a href="">
+                           <span class="btm1txt">
+                            IBLA 2023: MEET VIKRAM KIRLOSKAR, THE MAN WHO BROUGHT TOYOTA TO INDIA
+                           </span>
+                           <h3 class="btm2Txt">
+                            Adar Poonawalla, CEO of Serum Institute of India, was in attendance the
+                             India Business Leader Awards 2023, for which he was a member of the jury tasked with selecting winners across various categories.
+                           </h3>
+                         </a>
+                        </div>
+                    </div>
+                </div>
+                <!--9bx-->
+                <div class="artcle_bx">
+                    <a href="">
+                        <img class="artcle_img" src="./images/g4.png" alt="">
+                    </a>
+                    <div>
+                        <div class="artcle_tvDate">
+                            <span><a href="">cnbctv18.com |</a></span>
+                            <span><a href="">Thursday,11 May 2023</a></span>
+                        </div>
+                        <div class="article-botmTxt">
+                          <a href="">
+                           <span class="btm1txt">
+                            WPL: A GAME-CHANGER FOR WOMEN’S CRICKET, SAYS JHULAN GOSWAMI
+                           </span>
+                           <h3 class="btm2Txt">Mithali Raj, former captain of the India women's national 
+                            cricket team, also said the WPL will inspire many other girls to pick up the bat as they grow up watching women cricketers on television.
+                           </h3>
+                         </a>
+                        </div>
+                    </div>
+                </div>
+                <!--10bx-->
+                <div class="artcle_bx">
+                    <a href="">
+                        <img class="artcle_img" src="./images/g3.png" alt="">
+                    </a>
+                    <div>
+                        <div class="artcle_tvDate">
+                            <span><a href="">cnbctv18.com |</a></span>
+                            <span><a href="">Thursday,11 May 2023</a></span>
+                        </div>
+                        <div class="article-botmTxt">
+                          <a href="">
+                           <span class="btm1txt">
+                            WPL: A GAME-CHANGER FOR WOMEN’S CRICKET, SAYS JHULAN GOSWAMI
+                           </span>
+                           <h3 class="btm2Txt">Mithali Raj, former captain of the India women's national 
+                            cricket team, also said the WPL will inspire many other girls to pick up the bat as they grow up watching women cricketers on television.
+                           </h3>
+                         </a>
+                        </div>
+                    </div>
+                </div>
+             </div>
+             </div>
+
+
+
+             <div class="artcle_listsCont">
+                <h2 class="artcle_listsCont_hed">ARTICLES 2022</h2>
+                <!--1bx-->
+                <div class="artcle_bx">
+                    <a href="">
+                        <img class="artcle_img" src="./images/g5.png" alt="">
+                    </a>
+                    <div>
+                        <div class="artcle_tvDate">
+                            <span><a href="">cnbctv18.com |</a></span>
+                            <span><a href="">Thursday,11 May 2023</a></span>
+                        </div>
+                        <div class="article-botmTxt">
+                          <a href="">
+                           <span class="btm1txt">
+                            WPL: A GAME-CHANGER FOR WOMEN’S CRICKET, SAYS JHULAN GOSWAMI
+                           </span>
+                           <h3 class="btm2Txt">Mithali Raj, former captain of the India women's national 
+                            cricket team, also said the WPL will inspire many other girls to pick up the bat as they grow up watching women cricketers on television.
+                           </h3>
+                         </a>
+                        </div>
+                    </div>
+                </div>
+                  <!--2bx-->
+                <div class="artcle_bx">
+                    <a href="">
+                        <img class="artcle_img" src="./images/g6.png" alt="">
+                    </a>
+                    <div>
+                        <div class="artcle_tvDate">
+                            <span><a href="">cnbctv18.com |</a></span>
+                            <span><a href="">Thursday,11 May 2023</a></span>
+                        </div>
+                        <div class="article-botmTxt">
+                          <a href="">
+                           <span class="btm1txt">
+                            IBLA 2023 | BOLLYWOOD ACTRESS ALIA BHATT WINS ENTERTAINMENT LEADER OF THE YEAR
+                           </span>
+                           <h3 class="btm2Txt">Bollywood actress Alia Bhatt on Thursday received the Entertainment 
+                            Leader of the Year at the 18th edition of CNBC-TV18's India Business Leadership Awards (IBLA) in Mumbai.
+                           </h3>
+                         </a>
+                        </div>
+                    </div>
+                </div>
+                  <!--3bx-->
+                <div class="artcle_bx">
+                    <a href="">
+                        <img class="artcle_img" src="./images/g3.png" alt="">
+                    </a>
+                    <div>
+                        <div class="artcle_tvDate">
+                            <span><a href="">cnbctv18.com |</a></span>
+                            <span><a href="">Thursday,11 May 2023</a></span>
+                        </div>
+                        <div class="article-botmTxt">
+                          <a href="">
+                           <span class="btm1txt">
+                            IBLA 2023: MEET VIKRAM KIRLOSKAR, THE MAN WHO BROUGHT TOYOTA TO INDIA
+                           </span>
+                           <h3 class="btm2Txt">Adar Poonawalla, CEO of Serum Institute of India,
+                             was in attendance the India Business Leader Awards 2023, for which he was a member of the jury tasked with selecting winners across various categories.
+                           </h3>
+                         </a>
+                        </div>
+                    </div>
+                </div>
+                  <!--4bx-->
+                <div class="artcle_bx">
+                    <a href="">
+                        <img class="artcle_img" src="./images/g4.png" alt="">
+                    </a>
+                    <div>
+                        <div class="artcle_tvDate">
+                            <span><a href="">cnbctv18.com |</a></span>
+                            <span><a href="">Thursday,11 May 2023</a></span>
+                        </div>
+                        <div class="article-botmTxt">
+                          <a href="">
+                           <span class="btm1txt">
+                            IBLA 2023 | BOXING CHAMPION NIKHAT ZAREEN WINS SPORTS LEADER OF THE YEAR
+                           </span>
+                           <h3 class="btm2Txt">
+                            Two-time world champion Nikhat Zareen won gold medals at the 2022 Istanbul, 
+                            and 2023 New Delhi IBA Women's World Boxing Championships. She also won a gold medal at the Birmingham 2022 Commonwealth Games.
+                           </h3>
+                         </a>
+                        </div>
+                    </div>
+                </div>
+                <!--5bx-->
+                <div class="artcle_bx">
+                    <a href="">
+                        <img class="artcle_img" src="./images/g2.png" alt="">
+                    </a>
+                    <div>
+                        <div class="artcle_tvDate">
+                            <span><a href="">cnbctv18.com |</a></span>
+                            <span><a href="">Thursday,11 May 2023</a></span>
+                        </div>
+                        <div class="article-botmTxt">
+                          <a href="">
+                           <span class="btm1txt">
+                            IBLA 2023: LIFE AND LEGACY OF TATA GROUP’S 6TH CHAIRMAN CYRUS MISTRY
+                           </span>
+                           <h3 class="btm2Txt">
+                            Of Irish descent, Cyrus Mistry was born on 4 July 1968 to a Parsi 
+                            family in Bombay (now Mumbai), Maharashtra, the younger son of Indian billionaire and construction magnate Pallonji Mistry by his wife Patsy Perin Dubash.
+                           </h3>
+                         </a>
+                        </div>
+                    </div>
+                </div>
+                  <!--6bx-->
+                <div class="artcle_bx">
+                    <a href="">
+                        <img class="artcle_img" src="./images/g5.png" alt="">
+                    </a>
+                    <div>
+                        <div class="artcle_tvDate">
+                            <span><a href="">cnbctv18.com |</a></span>
+                            <span><a href="">Thursday,11 May 2023</a></span>
+                        </div>
+                        <div class="article-botmTxt">
+                          <a href="">
+                           <span class="btm1txt">
+                            WPL: A GAME-CHANGER FOR WOMEN’S CRICKET, SAYS JHULAN GOSWAMI
+                           </span>
+                           <h3 class="btm2Txt">Mithali Raj, former captain of the India women's national 
+                            cricket team, also said the WPL will inspire many other girls to pick up the bat as they grow up watching women cricketers on television.
+                           </h3>
+                         </a>
+                        </div>
+                    </div>
+                </div>
+                <!--7bx-->
+                <div class="artcle_bx">
+                    <a href="">
+                        <img class="artcle_img" src="./images/g2.png" alt="">
+                    </a>
+                    <div>
+                        <div class="artcle_tvDate">
+                            <span><a href="">cnbctv18.com |</a></span>
+                            <span><a href="">Thursday,11 May 2023</a></span>
+                        </div>
+                        <div class="article-botmTxt">
+                          <a href="">
+                           <span class="btm1txt">
+                            IBLA 2023 | BOLLYWOOD ACTRESS ALIA BHATT WINS ENTERTAINMENT LEADER OF THE YEAR
+                           </span>
+                           <h3 class="btm2Txt">
+                            Bollywood actress Alia Bhatt on Thursday received the Entertainment Leader of
+                             the Year at the 18th edition of CNBC-TV18's India Business Leadership Awards (IBLA) in Mumbai.
+                           </h3>
+                         </a>
+                        </div>
+                    </div>
+                </div>
+                <!--8bx-->
+                <div class="artcle_bx">
+                    <a href="">
+                        <img class="artcle_img" src="./images/g5.png" alt="">
+                    </a>
+                    <div>
+                        <div class="artcle_tvDate">
+                            <span><a href="">cnbctv18.com |</a></span>
+                            <span><a href="">Thursday,11 May 2023</a></span>
+                        </div>
+                        <div class="article-botmTxt">
+                          <a href="">
+                           <span class="btm1txt">
+                            IBLA 2023: MEET VIKRAM KIRLOSKAR, THE MAN WHO BROUGHT TOYOTA TO INDIA
+                           </span>
+                           <h3 class="btm2Txt">
+                            Adar Poonawalla, CEO of Serum Institute of India, was in attendance the
+                             India Business Leader Awards 2023, for which he was a member of the jury tasked with selecting winners across various categories.
+                           </h3>
+                         </a>
+                        </div>
+                    </div>
+                </div>
+                <!--9bx-->
+                <div class="artcle_bx">
+                    <a href="">
+                        <img class="artcle_img" src="./images/g4.png" alt="">
+                    </a>
+                    <div>
+                        <div class="artcle_tvDate">
+                            <span><a href="">cnbctv18.com |</a></span>
+                            <span><a href="">Thursday,11 May 2023</a></span>
+                        </div>
+                        <div class="article-botmTxt">
+                          <a href="">
+                           <span class="btm1txt">
+                            WPL: A GAME-CHANGER FOR WOMEN’S CRICKET, SAYS JHULAN GOSWAMI
+                           </span>
+                           <h3 class="btm2Txt">Mithali Raj, former captain of the India women's national 
+                            cricket team, also said the WPL will inspire many other girls to pick up the bat as they grow up watching women cricketers on television.
+                           </h3>
+                         </a>
+                        </div>
+                    </div>
+                </div>
+                <!--10bx-->
+                <div class="artcle_bx">
+                    <a href="">
+                        <img class="artcle_img" src="./images/g3.png" alt="">
+                    </a>
+                    <div>
+                        <div class="artcle_tvDate">
+                            <span><a href="">cnbctv18.com |</a></span>
+                            <span><a href="">Thursday,11 May 2023</a></span>
+                        </div>
+                        <div class="article-botmTxt">
+                          <a href="">
+                           <span class="btm1txt">
+                            WPL: A GAME-CHANGER FOR WOMEN’S CRICKET, SAYS JHULAN GOSWAMI
+                           </span>
+                           <h3 class="btm2Txt">Mithali Raj, former captain of the India women's national 
+                            cricket team, also said the WPL will inspire many other girls to pick up the bat as they grow up watching women cricketers on television.
+                           </h3>
+                         </a>
+                        </div>
+                    </div>
+                </div>
+             </div>
+
+
+             <div class="artcle_listsCont">
+                <h2 class="artcle_listsCont_hed">ARTICLES 2021</h2>
+                <!--1bx-->
+                <div class="artcle_bx">
+                    <a href="">
+                        <img class="artcle_img" src="./images/g5.png" alt="">
+                    </a>
+                    <div>
+                        <div class="artcle_tvDate">
+                            <span><a href="">cnbctv18.com |</a></span>
+                            <span><a href="">Thursday,11 May 2023</a></span>
+                        </div>
+                        <div class="article-botmTxt">
+                          <a href="">
+                           <span class="btm1txt">
+                            WPL: A GAME-CHANGER FOR WOMEN’S CRICKET, SAYS JHULAN GOSWAMI
+                           </span>
+                           <h3 class="btm2Txt">Mithali Raj, former captain of the India women's national 
+                            cricket team, also said the WPL will inspire many other girls to pick up the bat as they grow up watching women cricketers on television.
+                           </h3>
+                         </a>
+                        </div>
+                    </div>
+                </div>
+                  <!--2bx-->
+                <div class="artcle_bx">
+                    <a href="">
+                        <img class="artcle_img" src="./images/g6.png" alt="">
+                    </a>
+                    <div>
+                        <div class="artcle_tvDate">
+                            <span><a href="">cnbctv18.com |</a></span>
+                            <span><a href="">Thursday,11 May 2023</a></span>
+                        </div>
+                        <div class="article-botmTxt">
+                          <a href="">
+                           <span class="btm1txt">
+                            IBLA 2023 | BOLLYWOOD ACTRESS ALIA BHATT WINS ENTERTAINMENT LEADER OF THE YEAR
+                           </span>
+                           <h3 class="btm2Txt">Bollywood actress Alia Bhatt on Thursday received the Entertainment 
+                            Leader of the Year at the 18th edition of CNBC-TV18's India Business Leadership Awards (IBLA) in Mumbai.
+                           </h3>
+                         </a>
+                        </div>
+                    </div>
+                </div>
+                  <!--3bx-->
+                <div class="artcle_bx">
+                    <a href="">
+                        <img class="artcle_img" src="./images/g3.png" alt="">
+                    </a>
+                    <div>
+                        <div class="artcle_tvDate">
+                            <span><a href="">cnbctv18.com |</a></span>
+                            <span><a href="">Thursday,11 May 2023</a></span>
+                        </div>
+                        <div class="article-botmTxt">
+                          <a href="">
+                           <span class="btm1txt">
+                            IBLA 2023: MEET VIKRAM KIRLOSKAR, THE MAN WHO BROUGHT TOYOTA TO INDIA
+                           </span>
+                           <h3 class="btm2Txt">Adar Poonawalla, CEO of Serum Institute of India,
+                             was in attendance the India Business Leader Awards 2023, for which he was a member of the jury tasked with selecting winners across various categories.
+                           </h3>
+                         </a>
+                        </div>
+                    </div>
+                </div>
+                  <!--4bx-->
+                <div class="artcle_bx">
+                    <a href="">
+                        <img class="artcle_img" src="./images/g4.png" alt="">
+                    </a>
+                    <div>
+                        <div class="artcle_tvDate">
+                            <span><a href="">cnbctv18.com |</a></span>
+                            <span><a href="">Thursday,11 May 2023</a></span>
+                        </div>
+                        <div class="article-botmTxt">
+                          <a href="">
+                           <span class="btm1txt">
+                            IBLA 2023 | BOXING CHAMPION NIKHAT ZAREEN WINS SPORTS LEADER OF THE YEAR
+                           </span>
+                           <h3 class="btm2Txt">
+                            Two-time world champion Nikhat Zareen won gold medals at the 2022 Istanbul, 
+                            and 2023 New Delhi IBA Women's World Boxing Championships. She also won a gold medal at the Birmingham 2022 Commonwealth Games.
+                           </h3>
+                         </a>
+                        </div>
+                    </div>
+                </div>
+                <!--5bx-->
+                <div class="artcle_bx">
+                    <a href="">
+                        <img class="artcle_img" src="./images/g2.png" alt="">
+                    </a>
+                    <div>
+                        <div class="artcle_tvDate">
+                            <span><a href="">cnbctv18.com |</a></span>
+                            <span><a href="">Thursday,11 May 2023</a></span>
+                        </div>
+                        <div class="article-botmTxt">
+                          <a href="">
+                           <span class="btm1txt">
+                            IBLA 2023: LIFE AND LEGACY OF TATA GROUP’S 6TH CHAIRMAN CYRUS MISTRY
+                           </span>
+                           <h3 class="btm2Txt">
+                            Of Irish descent, Cyrus Mistry was born on 4 July 1968 to a Parsi 
+                            family in Bombay (now Mumbai), Maharashtra, the younger son of Indian billionaire and construction magnate Pallonji Mistry by his wife Patsy Perin Dubash.
+                           </h3>
+                         </a>
+                        </div>
+                    </div>
+                </div>
+                  <!--6bx-->
+                <div class="artcle_bx">
+                    <a href="">
+                        <img class="artcle_img" src="./images/g5.png" alt="">
+                    </a>
+                    <div>
+                        <div class="artcle_tvDate">
+                            <span><a href="">cnbctv18.com |</a></span>
+                            <span><a href="">Thursday,11 May 2023</a></span>
+                        </div>
+                        <div class="article-botmTxt">
+                          <a href="">
+                           <span class="btm1txt">
+                            WPL: A GAME-CHANGER FOR WOMEN’S CRICKET, SAYS JHULAN GOSWAMI
+                           </span>
+                           <h3 class="btm2Txt">Mithali Raj, former captain of the India women's national 
+                            cricket team, also said the WPL will inspire many other girls to pick up the bat as they grow up watching women cricketers on television.
+                           </h3>
+                         </a>
+                        </div>
+                    </div>
+                </div>
+                <!--7bx-->
+                <div class="artcle_bx">
+                    <a href="">
+                        <img class="artcle_img" src="./images/g2.png" alt="">
+                    </a>
+                    <div>
+                        <div class="artcle_tvDate">
+                            <span><a href="">cnbctv18.com |</a></span>
+                            <span><a href="">Thursday,11 May 2023</a></span>
+                        </div>
+                        <div class="article-botmTxt">
+                          <a href="">
+                           <span class="btm1txt">
+                            IBLA 2023 | BOLLYWOOD ACTRESS ALIA BHATT WINS ENTERTAINMENT LEADER OF THE YEAR
+                           </span>
+                           <h3 class="btm2Txt">
+                            Bollywood actress Alia Bhatt on Thursday received the Entertainment Leader of
+                             the Year at the 18th edition of CNBC-TV18's India Business Leadership Awards (IBLA) in Mumbai.
+                           </h3>
+                         </a>
+                        </div>
+                    </div>
+                </div>
+                <!--8bx-->
+                <div class="artcle_bx">
+                    <a href="">
+                        <img class="artcle_img" src="./images/g5.png" alt="">
+                    </a>
+                    <div>
+                        <div class="artcle_tvDate">
+                            <span><a href="">cnbctv18.com |</a></span>
+                            <span><a href="">Thursday,11 May 2023</a></span>
+                        </div>
+                        <div class="article-botmTxt">
+                          <a href="">
+                           <span class="btm1txt">
+                            IBLA 2023: MEET VIKRAM KIRLOSKAR, THE MAN WHO BROUGHT TOYOTA TO INDIA
+                           </span>
+                           <h3 class="btm2Txt">
+                            Adar Poonawalla, CEO of Serum Institute of India, was in attendance the
+                             India Business Leader Awards 2023, for which he was a member of the jury tasked with selecting winners across various categories.
+                           </h3>
+                         </a>
+                        </div>
+                    </div>
+                </div>
+                <!--9bx-->
+                <div class="artcle_bx">
+                    <a href="">
+                        <img class="artcle_img" src="./images/g4.png" alt="">
+                    </a>
+                    <div>
+                        <div class="artcle_tvDate">
+                            <span><a href="">cnbctv18.com |</a></span>
+                            <span><a href="">Thursday,11 May 2023</a></span>
+                        </div>
+                        <div class="article-botmTxt">
+                          <a href="">
+                           <span class="btm1txt">
+                            WPL: A GAME-CHANGER FOR WOMEN’S CRICKET, SAYS JHULAN GOSWAMI
+                           </span>
+                           <h3 class="btm2Txt">Mithali Raj, former captain of the India women's national 
+                            cricket team, also said the WPL will inspire many other girls to pick up the bat as they grow up watching women cricketers on television.
+                           </h3>
+                         </a>
+                        </div>
+                    </div>
+                </div>
+                <!--10bx-->
+                <div class="artcle_bx">
+                    <a href="">
+                        <img class="artcle_img" src="./images/g3.png" alt="">
+                    </a>
+                    <div>
+                        <div class="artcle_tvDate">
+                            <span><a href="">cnbctv18.com |</a></span>
+                            <span><a href="">Thursday,11 May 2023</a></span>
+                        </div>
+                        <div class="article-botmTxt">
+                          <a href="">
+                           <span class="btm1txt">
+                            WPL: A GAME-CHANGER FOR WOMEN’S CRICKET, SAYS JHULAN GOSWAMI
+                           </span>
+                           <h3 class="btm2Txt">Mithali Raj, former captain of the India women's national 
+                            cricket team, also said the WPL will inspire many other girls to pick up the bat as they grow up watching women cricketers on television.
+                           </h3>
+                         </a>
+                        </div>
+                    </div>
+                </div>
+             </div>
+
+             <div class="artcle_listsCont">
+                <h2 class="artcle_listsCont_hed">ARTICLES 2020</h2>
+                <!--1bx-->
+                <div class="artcle_bx">
+                    <a href="">
+                        <img class="artcle_img" src="./images/g5.png" alt="">
+                    </a>
+                    <div>
+                        <div class="artcle_tvDate">
+                            <span><a href="">cnbctv18.com |</a></span>
+                            <span><a href="">Thursday,11 May 2023</a></span>
+                        </div>
+                        <div class="article-botmTxt">
+                          <a href="">
+                           <span class="btm1txt">
+                            WPL: A GAME-CHANGER FOR WOMEN’S CRICKET, SAYS JHULAN GOSWAMI
+                           </span>
+                           <h3 class="btm2Txt">Mithali Raj, former captain of the India women's national 
+                            cricket team, also said the WPL will inspire many other girls to pick up the bat as they grow up watching women cricketers on television.
+                           </h3>
+                         </a>
+                        </div>
+                    </div>
+                </div>
+                  <!--2bx-->
+                <div class="artcle_bx">
+                    <a href="">
+                        <img class="artcle_img" src="./images/g6.png" alt="">
+                    </a>
+                    <div>
+                        <div class="artcle_tvDate">
+                            <span><a href="">cnbctv18.com |</a></span>
+                            <span><a href="">Thursday,11 May 2023</a></span>
+                        </div>
+                        <div class="article-botmTxt">
+                          <a href="">
+                           <span class="btm1txt">
+                            IBLA 2023 | BOLLYWOOD ACTRESS ALIA BHATT WINS ENTERTAINMENT LEADER OF THE YEAR
+                           </span>
+                           <h3 class="btm2Txt">Bollywood actress Alia Bhatt on Thursday received the Entertainment 
+                            Leader of the Year at the 18th edition of CNBC-TV18's India Business Leadership Awards (IBLA) in Mumbai.
+                           </h3>
+                         </a>
+                        </div>
+                    </div>
+                </div>
+                  <!--3bx-->
+                <div class="artcle_bx">
+                    <a href="">
+                        <img class="artcle_img" src="./images/g3.png" alt="">
+                    </a>
+                    <div>
+                        <div class="artcle_tvDate">
+                            <span><a href="">cnbctv18.com |</a></span>
+                            <span><a href="">Thursday,11 May 2023</a></span>
+                        </div>
+                        <div class="article-botmTxt">
+                          <a href="">
+                           <span class="btm1txt">
+                            IBLA 2023: MEET VIKRAM KIRLOSKAR, THE MAN WHO BROUGHT TOYOTA TO INDIA
+                           </span>
+                           <h3 class="btm2Txt">Adar Poonawalla, CEO of Serum Institute of India,
+                             was in attendance the India Business Leader Awards 2023, for which he was a member of the jury tasked with selecting winners across various categories.
+                           </h3>
+                         </a>
+                        </div>
+                    </div>
+                </div>
+                  <!--4bx-->
+                <div class="artcle_bx">
+                    <a href="">
+                        <img class="artcle_img" src="./images/g4.png" alt="">
+                    </a>
+                    <div>
+                        <div class="artcle_tvDate">
+                            <span><a href="">cnbctv18.com |</a></span>
+                            <span><a href="">Thursday,11 May 2023</a></span>
+                        </div>
+                        <div class="article-botmTxt">
+                          <a href="">
+                           <span class="btm1txt">
+                            IBLA 2023 | BOXING CHAMPION NIKHAT ZAREEN WINS SPORTS LEADER OF THE YEAR
+                           </span>
+                           <h3 class="btm2Txt">
+                            Two-time world champion Nikhat Zareen won gold medals at the 2022 Istanbul, 
+                            and 2023 New Delhi IBA Women's World Boxing Championships. She also won a gold medal at the Birmingham 2022 Commonwealth Games.
+                           </h3>
+                         </a>
+                        </div>
+                    </div>
+                </div>
+                <!--5bx-->
+                <div class="artcle_bx">
+                    <a href="">
+                        <img class="artcle_img" src="./images/g2.png" alt="">
+                    </a>
+                    <div>
+                        <div class="artcle_tvDate">
+                            <span><a href="">cnbctv18.com |</a></span>
+                            <span><a href="">Thursday,11 May 2023</a></span>
+                        </div>
+                        <div class="article-botmTxt">
+                          <a href="">
+                           <span class="btm1txt">
+                            IBLA 2023: LIFE AND LEGACY OF TATA GROUP’S 6TH CHAIRMAN CYRUS MISTRY
+                           </span>
+                           <h3 class="btm2Txt">
+                            Of Irish descent, Cyrus Mistry was born on 4 July 1968 to a Parsi 
+                            family in Bombay (now Mumbai), Maharashtra, the younger son of Indian billionaire and construction magnate Pallonji Mistry by his wife Patsy Perin Dubash.
+                           </h3>
+                         </a>
+                        </div>
+                    </div>
+                </div>
+                  <!--6bx-->
+                <div class="artcle_bx">
+                    <a href="">
+                        <img class="artcle_img" src="./images/g5.png" alt="">
+                    </a>
+                    <div>
+                        <div class="artcle_tvDate">
+                            <span><a href="">cnbctv18.com |</a></span>
+                            <span><a href="">Thursday,11 May 2023</a></span>
+                        </div>
+                        <div class="article-botmTxt">
+                          <a href="">
+                           <span class="btm1txt">
+                            WPL: A GAME-CHANGER FOR WOMEN’S CRICKET, SAYS JHULAN GOSWAMI
+                           </span>
+                           <h3 class="btm2Txt">Mithali Raj, former captain of the India women's national 
+                            cricket team, also said the WPL will inspire many other girls to pick up the bat as they grow up watching women cricketers on television.
+                           </h3>
+                         </a>
+                        </div>
+                    </div>
+                </div>
+                <!--7bx-->
+                <div class="artcle_bx">
+                    <a href="">
+                        <img class="artcle_img" src="./images/g2.png" alt="">
+                    </a>
+                    <div>
+                        <div class="artcle_tvDate">
+                            <span><a href="">cnbctv18.com |</a></span>
+                            <span><a href="">Thursday,11 May 2023</a></span>
+                        </div>
+                        <div class="article-botmTxt">
+                          <a href="">
+                           <span class="btm1txt">
+                            IBLA 2023 | BOLLYWOOD ACTRESS ALIA BHATT WINS ENTERTAINMENT LEADER OF THE YEAR
+                           </span>
+                           <h3 class="btm2Txt">
+                            Bollywood actress Alia Bhatt on Thursday received the Entertainment Leader of
+                             the Year at the 18th edition of CNBC-TV18's India Business Leadership Awards (IBLA) in Mumbai.
+                           </h3>
+                         </a>
+                        </div>
+                    </div>
+                </div>
+                <!--8bx-->
+                <div class="artcle_bx">
+                    <a href="">
+                        <img class="artcle_img" src="./images/g5.png" alt="">
+                    </a>
+                    <div>
+                        <div class="artcle_tvDate">
+                            <span><a href="">cnbctv18.com |</a></span>
+                            <span><a href="">Thursday,11 May 2023</a></span>
+                        </div>
+                        <div class="article-botmTxt">
+                          <a href="">
+                           <span class="btm1txt">
+                            IBLA 2023: MEET VIKRAM KIRLOSKAR, THE MAN WHO BROUGHT TOYOTA TO INDIA
+                           </span>
+                           <h3 class="btm2Txt">
+                            Adar Poonawalla, CEO of Serum Institute of India, was in attendance the
+                             India Business Leader Awards 2023, for which he was a member of the jury tasked with selecting winners across various categories.
+                           </h3>
+                         </a>
+                        </div>
+                    </div>
+                </div>
+                <!--9bx-->
+                <div class="artcle_bx">
+                    <a href="">
+                        <img class="artcle_img" src="./images/g4.png" alt="">
+                    </a>
+                    <div>
+                        <div class="artcle_tvDate">
+                            <span><a href="">cnbctv18.com |</a></span>
+                            <span><a href="">Thursday,11 May 2023</a></span>
+                        </div>
+                        <div class="article-botmTxt">
+                          <a href="">
+                           <span class="btm1txt">
+                            WPL: A GAME-CHANGER FOR WOMEN’S CRICKET, SAYS JHULAN GOSWAMI
+                           </span>
+                           <h3 class="btm2Txt">Mithali Raj, former captain of the India women's national 
+                            cricket team, also said the WPL will inspire many other girls to pick up the bat as they grow up watching women cricketers on television.
+                           </h3>
+                         </a>
+                        </div>
+                    </div>
+                </div>
+                <!--10bx-->
+                <div class="artcle_bx">
+                    <a href="">
+                        <img class="artcle_img" src="./images/g3.png" alt="">
+                    </a>
+                    <div>
+                        <div class="artcle_tvDate">
+                            <span><a href="">cnbctv18.com |</a></span>
+                            <span><a href="">Thursday,11 May 2023</a></span>
+                        </div>
+                        <div class="article-botmTxt">
+                          <a href="">
+                           <span class="btm1txt">
+                            WPL: A GAME-CHANGER FOR WOMEN’S CRICKET, SAYS JHULAN GOSWAMI
+                           </span>
+                           <h3 class="btm2Txt">Mithali Raj, former captain of the India women's national 
+                            cricket team, also said the WPL will inspire many other girls to pick up the bat as they grow up watching women cricketers on television.
+                           </h3>
+                         </a>
+                        </div>
+                    </div>
+                </div>
+             </div>
+
+
+                <div class="artcle_listsCont">
+                    <h2 class="artcle_listsCont_hed">ARTICLES 2019</h2>
+                <!--1bx-->
+                <div class="artcle_bx">
+                    <a href="">
+                        <img class="artcle_img" src="./images/g5.png" alt="">
+                    </a>
+                    <div>
+                        <div class="artcle_tvDate">
+                            <span><a href="">cnbctv18.com |</a></span>
+                            <span><a href="">Thursday,11 May 2023</a></span>
+                        </div>
+                        <div class="article-botmTxt">
+                          <a href="">
+                           <span class="btm1txt">
+                            WPL: A GAME-CHANGER FOR WOMEN’S CRICKET, SAYS JHULAN GOSWAMI
+                           </span>
+                           <h3 class="btm2Txt">Mithali Raj, former captain of the India women's national 
+                            cricket team, also said the WPL will inspire many other girls to pick up the bat as they grow up watching women cricketers on television.
+                           </h3>
+                         </a>
+                        </div>
+                    </div>
+                </div>
+                  <!--2bx-->
+                <div class="artcle_bx">
+                    <a href="">
+                        <img class="artcle_img" src="./images/g6.png" alt="">
+                    </a>
+                    <div>
+                        <div class="artcle_tvDate">
+                            <span><a href="">cnbctv18.com |</a></span>
+                            <span><a href="">Thursday,11 May 2023</a></span>
+                        </div>
+                        <div class="article-botmTxt">
+                          <a href="">
+                           <span class="btm1txt">
+                            IBLA 2023 | BOLLYWOOD ACTRESS ALIA BHATT WINS ENTERTAINMENT LEADER OF THE YEAR
+                           </span>
+                           <h3 class="btm2Txt">Bollywood actress Alia Bhatt on Thursday received the Entertainment 
+                            Leader of the Year at the 18th edition of CNBC-TV18's India Business Leadership Awards (IBLA) in Mumbai.
+                           </h3>
+                         </a>
+                        </div>
+                    </div>
+                </div>
+                  <!--3bx-->
+                <div class="artcle_bx">
+                    <a href="">
+                        <img class="artcle_img" src="./images/g3.png" alt="">
+                    </a>
+                    <div>
+                        <div class="artcle_tvDate">
+                            <span><a href="">cnbctv18.com |</a></span>
+                            <span><a href="">Thursday,11 May 2023</a></span>
+                        </div>
+                        <div class="article-botmTxt">
+                          <a href="">
+                           <span class="btm1txt">
+                            IBLA 2023: MEET VIKRAM KIRLOSKAR, THE MAN WHO BROUGHT TOYOTA TO INDIA
+                           </span>
+                           <h3 class="btm2Txt">Adar Poonawalla, CEO of Serum Institute of India,
+                             was in attendance the India Business Leader Awards 2023, for which he was a member of the jury tasked with selecting winners across various categories.
+                           </h3>
+                         </a>
+                        </div>
+                    </div>
+                </div>
+                  <!--4bx-->
+                <div class="artcle_bx">
+                    <a href="">
+                        <img class="artcle_img" src="./images/g4.png" alt="">
+                    </a>
+                    <div>
+                        <div class="artcle_tvDate">
+                            <span><a href="">cnbctv18.com |</a></span>
+                            <span><a href="">Thursday,11 May 2023</a></span>
+                        </div>
+                        <div class="article-botmTxt">
+                          <a href="">
+                           <span class="btm1txt">
+                            IBLA 2023 | BOXING CHAMPION NIKHAT ZAREEN WINS SPORTS LEADER OF THE YEAR
+                           </span>
+                           <h3 class="btm2Txt">
+                            Two-time world champion Nikhat Zareen won gold medals at the 2022 Istanbul, 
+                            and 2023 New Delhi IBA Women's World Boxing Championships. She also won a gold medal at the Birmingham 2022 Commonwealth Games.
+                           </h3>
+                         </a>
+                        </div>
+                    </div>
+                </div>
+                <!--5bx-->
+                <div class="artcle_bx">
+                    <a href="">
+                        <img class="artcle_img" src="./images/g2.png" alt="">
+                    </a>
+                    <div>
+                        <div class="artcle_tvDate">
+                            <span><a href="">cnbctv18.com |</a></span>
+                            <span><a href="">Thursday,11 May 2023</a></span>
+                        </div>
+                        <div class="article-botmTxt">
+                          <a href="">
+                           <span class="btm1txt">
+                            IBLA 2023: LIFE AND LEGACY OF TATA GROUP’S 6TH CHAIRMAN CYRUS MISTRY
+                           </span>
+                           <h3 class="btm2Txt">
+                            Of Irish descent, Cyrus Mistry was born on 4 July 1968 to a Parsi 
+                            family in Bombay (now Mumbai), Maharashtra, the younger son of Indian billionaire and construction magnate Pallonji Mistry by his wife Patsy Perin Dubash.
+                           </h3>
+                         </a>
+                        </div>
+                    </div>
+                </div>
+                  <!--6bx-->
+                <div class="artcle_bx">
+                    <a href="">
+                        <img class="artcle_img" src="./images/g5.png" alt="">
+                    </a>
+                    <div>
+                        <div class="artcle_tvDate">
+                            <span><a href="">cnbctv18.com |</a></span>
+                            <span><a href="">Thursday,11 May 2023</a></span>
+                        </div>
+                        <div class="article-botmTxt">
+                          <a href="">
+                           <span class="btm1txt">
+                            WPL: A GAME-CHANGER FOR WOMEN’S CRICKET, SAYS JHULAN GOSWAMI
+                           </span>
+                           <h3 class="btm2Txt">Mithali Raj, former captain of the India women's national 
+                            cricket team, also said the WPL will inspire many other girls to pick up the bat as they grow up watching women cricketers on television.
+                           </h3>
+                         </a>
+                        </div>
+                    </div>
+                </div>
+                <!--7bx-->
+                <div class="artcle_bx">
+                    <a href="">
+                        <img class="artcle_img" src="./images/g2.png" alt="">
+                    </a>
+                    <div>
+                        <div class="artcle_tvDate">
+                            <span><a href="">cnbctv18.com |</a></span>
+                            <span><a href="">Thursday,11 May 2023</a></span>
+                        </div>
+                        <div class="article-botmTxt">
+                          <a href="">
+                           <span class="btm1txt">
+                            IBLA 2023 | BOLLYWOOD ACTRESS ALIA BHATT WINS ENTERTAINMENT LEADER OF THE YEAR
+                           </span>
+                           <h3 class="btm2Txt">
+                            Bollywood actress Alia Bhatt on Thursday received the Entertainment Leader of
+                             the Year at the 18th edition of CNBC-TV18's India Business Leadership Awards (IBLA) in Mumbai.
+                           </h3>
+                         </a>
+                        </div>
+                    </div>
+                </div>
+                <!--8bx-->
+                <div class="artcle_bx">
+                    <a href="">
+                        <img class="artcle_img" src="./images/g5.png" alt="">
+                    </a>
+                    <div>
+                        <div class="artcle_tvDate">
+                            <span><a href="">cnbctv18.com |</a></span>
+                            <span><a href="">Thursday,11 May 2023</a></span>
+                        </div>
+                        <div class="article-botmTxt">
+                          <a href="">
+                           <span class="btm1txt">
+                            IBLA 2023: MEET VIKRAM KIRLOSKAR, THE MAN WHO BROUGHT TOYOTA TO INDIA
+                           </span>
+                           <h3 class="btm2Txt">
+                            Adar Poonawalla, CEO of Serum Institute of India, was in attendance the
+                             India Business Leader Awards 2023, for which he was a member of the jury tasked with selecting winners across various categories.
+                           </h3>
+                         </a>
+                        </div>
+                    </div>
+                </div>
+                <!--9bx-->
+                <div class="artcle_bx">
+                    <a href="">
+                        <img class="artcle_img" src="./images/g4.png" alt="">
+                    </a>
+                    <div>
+                        <div class="artcle_tvDate">
+                            <span><a href="">cnbctv18.com |</a></span>
+                            <span><a href="">Thursday,11 May 2023</a></span>
+                        </div>
+                        <div class="article-botmTxt">
+                          <a href="">
+                           <span class="btm1txt">
+                            WPL: A GAME-CHANGER FOR WOMEN’S CRICKET, SAYS JHULAN GOSWAMI
+                           </span>
+                           <h3 class="btm2Txt">Mithali Raj, former captain of the India women's national 
+                            cricket team, also said the WPL will inspire many other girls to pick up the bat as they grow up watching women cricketers on television.
+                           </h3>
+                         </a>
+                        </div>
+                    </div>
+                </div>
+                <!--10bx-->
+                <div class="artcle_bx">
+                    <a href="">
+                        <img class="artcle_img" src="./images/g3.png" alt="">
+                    </a>
+                    <div>
+                        <div class="artcle_tvDate">
+                            <span><a href="">cnbctv18.com |</a></span>
+                            <span><a href="">Thursday,11 May 2023</a></span>
+                        </div>
+                        <div class="article-botmTxt">
+                          <a href="">
+                           <span class="btm1txt">
+                            WPL: A GAME-CHANGER FOR WOMEN’S CRICKET, SAYS JHULAN GOSWAMI
+                           </span>
+                           <h3 class="btm2Txt">Mithali Raj, former captain of the India women's national 
+                            cricket team, also said the WPL will inspire many other girls to pick up the bat as they grow up watching women cricketers on television.
+                           </h3>
+                         </a>
+                        </div>
+                    </div>
+                </div>
+             </div>
+            </div>
+         </div>
+        </div>
+     </section>
+     <!-- Footer Section -->
+     <footer class="footer">
+        <div class="mxwidth">
+           <span class="footer__cprght">@ 2023 WWW.CNBCTV18-IBLA.COM. ALL RIGHTS RESERVED</span>
+           <div class="footer__menu__icons">
+              <ul class="footer__social">
+                 <li>
+                    <a href="">
+                       <img src="./images/fb.png" alt="">
+                    </a>
+                 </li>
+                 <li>
+                    <a href="">
+                       <img src="./images/tw.png" alt="">
+                    </a>
+                 </li>
+                 <li>
+                    <a href="">
+                       <img src="./images/18.png" alt="">
+                    </a>
+                 </li>
+    
+              </ul>
+           </div>
+        </div>
+     </footer>
+     <script>
+           let btn=document.querySelectorAll(".artcle-tb-btn");
+        let content=document.querySelectorAll(".artcle_listsCont");
+ 
+         btn.forEach((tab,index)=>{
+         tab.addEventListener("click",()=>{
+          btn.forEach(tab=>{tab.classList.remove("active")});
+           tab.classList.add("active");
+           
+           content.forEach(content=>{content.classList.remove("active")});
+           content[index].classList.add("active");
+    
+          
+         })
+        })
+     </script>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+         <script src="js/script.js"></script>
+         <script src="js/glide.min.js"></script>
+</body>
+</html>
